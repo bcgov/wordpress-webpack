@@ -7,11 +7,10 @@ This will be the base wepback configuration for all WordPress plugins and themes
 
 In package.json
 ``` 
-"dependencies": {   
-    "@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.gitt#1.1.0"
+"devDependencies": {   
+    "@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git#master"
 }
 ```
-
 
 ## Resources 
 * Have access to mixens.
