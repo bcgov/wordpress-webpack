@@ -1,8 +1,6 @@
 module.exports = {
   roots: ["<rootDir>/src"],
-  transform: {
-    "^.+\\.tsx?$": "ts-jest"
-  },
+  transform: {'^.+\\.[jt]sx?$': require.resolve( 'babel-jest' )},
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
+  moduleFileExtensions: [ "js", "jsx", "json", "node"]
 };
