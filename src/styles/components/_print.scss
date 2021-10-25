@@ -1,0 +1,59 @@
+bcgov-menu,
+bcgov-menu ul,
+bcgov-breadcrumb,
+.button-container,
+.feature-banner-image,
+footer {
+  display: none !important;
+}
+
+bcgov-header {
+  border-bottom: 1px solid inherit;
+
+  height: 60px;
+  padding: 1rem 0;
+  background-attachment: scroll;
+  background-position: left center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+  color-adjust: exact !important;
+  header {
+    display: none !important;
+  }
+}
+
+#main-content {
+  a {
+    color: inherit;
+    &::after {
+      content: " (" attr(href) ")";
+    }
+  }
+}
+
+form {
+  break-before: always;
+  input[type="submit"] {
+    display: none;
+  }
+}
+table,
+img,
+svg {
+  break-inside: avoid;
+}
+
+* {
+  background-color: #fff;
+}
+
+.has-text-align-center {
+  text-align: left !important;
+}
+
+.wp-block-image {
+  text-align: left !important;
+  margin: 0 !important;
+  display: inline-block;
+}

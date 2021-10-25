@@ -1,0 +1,51 @@
+.alignnone {
+  height: auto;
+}
+
+.alignfull {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+.alignright {
+  @include flexbox();
+  @include justify-content(flex-end);
+  @include align-items(center);
+}
+
+.alignleft {
+  @include flexbox();
+  @include justify-content(flex-start);
+  @include align-items(center);
+}
+
+.aligncenter {
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+
+.navigation {
+  &.posts-navigation {
+    margin-top: 2rem;
+    .nav-links {
+      @include flexbox();
+      @include justify-content(space-between);
+    }
+  }
+}
+
+#TB_caption {
+  height: 49px !important;
+  font-size: 0.9rem;
+  padding: 1rem 1.1rem !important;
+}
