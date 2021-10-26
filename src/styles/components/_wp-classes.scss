@@ -1,0 +1,47 @@
+.alignnone {
+	height: auto;
+}
+
+.alignfull {
+	margin-left: 0;
+	margin-right: 0;
+	position: relative;
+}
+
+.alignright {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.alignleft {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.aligncenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+.navigation {
+
+	&.posts-navigation {
+		margin-top: 2rem;
+
+		.nav-links {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}

@@ -1,0 +1,176 @@
+.gform_wrapper {
+
+	form {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.gform_heading {
+
+		h2,
+		h3,
+		h4,
+		h5 {
+			margin-top: 0;
+		}
+	}
+
+	.gfield_error {
+		border-width: 1px;
+        border-style: solid; 
+		padding: 0.5rem;
+
+		input:not([type="checkbox"]):not([type="radio"]),
+		select,
+		textarea {
+			border-width: 1px;
+            border-style: solid;
+		}
+	}
+
+	.gform_fields {
+
+		> li {
+			margin-bottom: 1rem;
+
+			input:not([type="submit"]),
+			select {
+				max-width: 800px;
+			}
+
+			input[type="text"] {
+
+				&.datepicker {
+					max-width: 200px;
+				}
+			}
+
+			input[type="checkbox"] {
+
+				&:checked {
+					padding: 0;
+
+					&::after {
+						position: absolute;
+						content: "✓";
+						top: -4px;
+						font-size: 1.1rem;
+					}
+				}
+			}
+
+			.gfield_description {
+				margin-top: 0.2rem;
+				font-size: 0.9rem;
+				font-weight: 200;
+			}
+
+			.ginput_complex {
+
+				flex-direction: column;
+				display flex;
+				flex-wrap: wrap;
+				padding: 1rem 0 0;
+				border-width: 1px;
+				border-style: solid;
+
+				> span {
+					margin: 0 0.5rem 1rem 0.5rem;
+
+					label {
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 980px) {
+
+		.gform_fields {
+
+			> li {
+
+				.ginput_complex {
+
+					@include flex-direction(row);
+
+					> span {
+						margin: 0 0.5rem 1rem 0.5rem;
+						width: 48%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ui-datepicker {
+	padding: 0.5rem;
+	border-width: 1px;
+    border-style: solid;
+
+	.ui-datepicker-header {
+		position: relative;
+
+		.ui-datepicker-prev {
+			float: left;
+
+			span {
+				visibility: hidden;
+			}
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-right-width: 20px;
+            border-right-style: solid; 
+		}
+
+		.ui-datepicker-next {
+			float: right;
+
+			span {
+				visibility: hidden;
+			}
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left-width: 20px;
+            border-left-style: solid;
+		}
+
+		.ui-datepicker-title {
+			position: absolute;
+			top: -7px;
+			left: 23%;
+		}
+
+		&::after {
+			clear: both;
+			margin: 0;
+		}
+	}
+
+	table {
+		margin-top: 0.5rem;
+		border-collapse: collapse;
+		border-spacing: 0;
+
+		&.ui-datepicker-calendar {
+
+			th,
+			td {
+				border-width: 1px;
+                border-style: solid;
+				vertical-align: middle;
+				text-align: center;
+
+				span {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}

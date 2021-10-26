@@ -1,6 +1,6 @@
 {
   "name": "@bcgov/webpack-wordpress",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Bcgov Wordpress <govwordpress@gov.bc.ca>",
   "repository": {
     "type": "git",
@@ -9,12 +9,16 @@
   "bugs": {
     "url": "https://apps.itsm.gov.bc.ca/jira/browse/WD-1180"
   },
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint:js": "wp-scripts lint-js ./src/scripts",
+    "lint:css": "wp-scripts lint-style ./src/styles",
+    "fix:css": "wp-scripts lint-style --fix --config @wordpress/stylelint-config/scss ./src/styles",
+    "format:js": "wp-scripts format ./src/scripts"
   },
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 10.0.0"
   },
   "browserslist": [
     "> 1.5%",
@@ -23,14 +27,17 @@
   ],
   "dependencies": {
     "@bcgov/bc-sans": "^1.0.1",
-    "@fortawesome/fontawesome-free": "^5.15",
-    "@fortawesome/fontawesome-svg-core": "^1.2",
-    "@fortawesome/free-brands-svg-icons": "^5.15",
-    "@fortawesome/free-regular-svg-icons": "^5.15",
-    "@fortawesome/free-solid-svg-icons": "^5.15",
-    "@wordpress/scripts": "^13.0.2",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@wordpress/scripts": "^17.1.0",
     "bootstrap": "v4.6.0",
     "copy-webpack-plugin": "^5.1.2",
-    "popper.js": "^1.16.1"
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "prettier": "^2.4.1",
+    "@wordpress/prettier-config": "^1.0.1"
   }
 }
