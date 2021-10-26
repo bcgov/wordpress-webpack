@@ -9,24 +9,21 @@
 }
 
 .alignright {
-
-	@include flexbox();
-	@include justify-content(flex-end);
-	@include align-items(center);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .alignleft {
-
-	@include flexbox();
-	@include justify-content(flex-start);
-	@include align-items(center);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .aligncenter {
-
-	@include flexbox();
-	@include justify-content(center);
-	@include align-items(center);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .has-text-align-center {
@@ -43,9 +40,8 @@
 		margin-top: 2rem;
 
 		.nav-links {
-
-			@include flexbox();
-			@include justify-content(space-between);
+			display: flex;
+			justify-content: space-between;
 		}
 	}
 }
