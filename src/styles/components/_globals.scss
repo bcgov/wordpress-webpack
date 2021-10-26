@@ -1,24 +1,25 @@
 .screen-reader-text {
-  display: none;
+	display: none;
 }
 
 .header-nav {
-  position: relative;
+	position: relative;
 }
 
 #main-content {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  z-index: 1;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	z-index: 1;
 }
 
 .template-marketing {
-  #main-content {
-    margin: 0;
-    padding: 0;
-  }
+
+	#main-content {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 p:empty {
-  margin: 0;
+	margin: 0;
 }
