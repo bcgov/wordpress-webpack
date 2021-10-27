@@ -7,5 +7,6 @@
     * prettier
     * @wordpress/prettier-config
     * jquery
+* Removed fortawesome font packages.
 * Added scripts lint:js, lint:css, fix:css, and format:js
 * Added some commen styles for WordPress.
