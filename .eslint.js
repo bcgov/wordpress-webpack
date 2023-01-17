@@ -43,7 +43,7 @@ module.exports = {
         },
       ],
       "no-var": lintSeverity,
-      "yoda": lintSeverity,
+      "yoda": [lintSeverity, "always", { onlyEquality: true }],
       "prefer-arrow/prefer-arrow-functions": lintSeverity,
       "jsdoc/require-jsdoc": lintSeverity,
       "jsdoc/require-param": lintSeverity,
