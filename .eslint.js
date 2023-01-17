@@ -17,6 +17,7 @@ module.exports = {
     },
     parserOptions: {
       ecmaFeatures: {
+        jsx: true,
         globalReturn: true,
         generators: false,
         objectLiteralDuplicateProperties: false,

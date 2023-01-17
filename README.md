@@ -16,12 +16,12 @@ In package.json, add BC Gov Webpack Wordpress as a dev dependency:
 
 ### JS Linting
 
-To add the JS linter rules, create an `eslint.js` file in your repository(if none present),
+To add the JS linter rules, create an `.eslint.js` file in your repository(if none present),
 and add the rules under the "extends" key:
 
 ```
 extends: [
-    "./node_modules/@bcgov/webpack-wordpress/eslint.js",
+    "./node_modules/@bcgov/webpack-wordpress/.eslint.js",
 ]
 ```
 
