@@ -10,7 +10,7 @@ This will be the base wepback configuration for all WordPress plugins and themes
 In package.json, add BC Gov Webpack Wordpress as a dev dependency:
 ``` 
 "devDependencies": {   
-    "@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git#1.2.0"
+    "@bcgov/webpack-wordpress": "git+https://apps.itsm.gov.bc.ca/bitbucket/scm/wp/bcgov-webpack-wordpress.git"
 }
 ```
 
