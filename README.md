@@ -37,6 +37,17 @@ You have the option to reduce the error severity to warnings if your project req
 In this rule set, `console.log()` calls  are not permitted in production builds. To enable this,
 declare a `NODE_ENV` environment variable in the relevant npm script. Set its value to `production` to ensure `console` calls are flagged.
 
+### CSS Linting
+
+To add the style linter rules, create a `.stylelintrc` file in your repositor(if none present),
+and add the rule set under the "extends" key:
+
+```
+{
+    "extends": "./node_modules/@bcgov/webpack-wordpress/.stylelintrc",
+}
+```
+
 ## Resources 
 
 ### Include Mixins
@@ -61,5 +72,4 @@ declare a `NODE_ENV` environment variable in the relevant npm script. Set its va
 
 
 ## Todo
-* upgrade @wordpress/scripts to the latest to include webpack major versoin 5
 * Add standalone test for this repo, for ease of development and testing.

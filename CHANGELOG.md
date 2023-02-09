@@ -1,4 +1,8 @@
-### 1.3.0 January 16, 2022
+### 1.4.0 February 8, 2023
+* Upgrade stylelint rule set([DESENG-255](https://apps.itsm.gov.bc.ca/jira/browse/DESENG-255))
+* Update README
+
+### 1.3.0 January 16, 2023
 * Upgrade eslint rule set([DESENG-176](https://apps.itsm.gov.bc.ca/jira/browse/DESENG-176))
 * Add to README
 

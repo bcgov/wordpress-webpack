@@ -1,6 +1,6 @@
 {
   "name": "@bcgov/webpack-wordpress",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Bcgov Wordpress <govwordpress@gov.bc.ca>",
   "repository": {
     "type": "git",
