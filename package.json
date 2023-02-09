@@ -35,6 +35,7 @@
     "prettier": "^2.4.1",
     "@wordpress/prettier-config": "^1.0.1",
     "eslint-plugin-jsdoc": "^39.6.4",
-    "eslint-plugin-prefer-arrow": "^1.2.3"
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "mini-css-extract-plugin": "^2.7.2"
   }
 }
