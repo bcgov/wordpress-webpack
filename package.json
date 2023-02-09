@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@bcgov/bc-sans": "^1.0.1",
-    "@wordpress/scripts": "^17.1.0",
+    "@wordpress/scripts": "^25.0.0",
     "bootstrap": "v4.6.0",
     "copy-webpack-plugin": "^5.1.2",
     "jquery": "^3.6.0",
