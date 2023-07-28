@@ -1,3 +1,6 @@
+### 1.5.0 July 28, 2023
+* Upgraded BC Sans font to 2.0 ([DESCW-1236](https://apps.itsm.gov.bc.ca/jira/browse/DESCW-1236))
+
 ### 1.4.0 February 8, 2023
 * Upgrade stylelint rule set([DESENG-255](https://apps.itsm.gov.bc.ca/jira/browse/DESENG-255))
 * Update README

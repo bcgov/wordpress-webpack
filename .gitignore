@@ -11,4 +11,3 @@ tests/_output
 .phpdocs
 .audit
 coverage
-package-lock.json
